@@ -20,7 +20,7 @@ app.post("/room/:roomCode/join", (req, res) => {
   }
   let token = "";
   var promises = [];
-  promises.push(admin.auth().createCustomToken(name));
+  promises.push(admin.auth().createCustomToken(name)); //maybe name and roomcode??
   promises.push(roomDoc.get());
   return Promise.all(promises)
     .then(data => {

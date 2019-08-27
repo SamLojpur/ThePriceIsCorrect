@@ -64,4 +64,4 @@ node_modules/
 # dotenv environment variables file
 .env
 
-functions/credentials/the-price-is-correct-0072e3f7b50a.json
+functions/service-account.json
